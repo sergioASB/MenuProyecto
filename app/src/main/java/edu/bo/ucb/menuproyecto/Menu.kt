@@ -1,5 +1,6 @@
 package edu.bo.ucb.menuproyecto
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -21,10 +22,26 @@ class Menu : AppCompatActivity() {
             R.drawable.galeria,
             R.drawable.horario,
         )
+        val list2= arrayListOf<String>(
+            getString(R.string.Configuraciones),
+            getString(R.string.Alarmas),
+            getString(R.string.Cámara),
+            getString(R.string.Contactos),
+            getString(R.string.Galeria),
+            getString(R.string.Horario)
+        )
+        val list3= arrayListOf<Intent>(
+            Intent(this, MainActivity::class.java) ,
+            Intent(this, MainActivity::class.java),
+            Intent(this, MainActivity::class.java),
+            Intent(this, MainActivity::class.java),
+            Intent(this, MainActivity::class.java),
+            Intent(this, prueba::class.java),
+        )
         val gridLayout = GridLayoutManager(this,2)
         gridLayout.orientation = GridLayoutManager.VERTICAL
         rvButtons.layoutManager = gridLayout
-        rvButtons.adapter = MenuAdapter(list, applicationContext)
+        rvButtons.adapter = MenuAdapter(list,list2,list3, applicationContext)
 
     }
 }

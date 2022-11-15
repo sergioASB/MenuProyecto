@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">Menu Proyecto</string>
-    <string name="Alarmas">op1</string>
-    <string name="Cámara">op2</string>
-    <string name="Configuraciones">op3</string>
-    <string name="Contactos">op4</string>
-    <string name="Galeria">op5</string>
-    <string name="Horario">op6</string>
+    <string name="Alarmas">Alarmas</string>
+    <string name="Cámara">Cámara</string>
+    <string name="Configuraciones">Configuraciones</string>
+    <string name="Contactos">Contactos</string>
+    <string name="Galeria">Galeria</string>
+    <string name="Horario">Horario</string>
 </resources>
